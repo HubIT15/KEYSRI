@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
@@ -553,7 +553,7 @@ input,textarea,select { font-family: inherit; outline: none; }
   .quick-links { gap: 18px; font-size: 0.65rem; }
 }
 
-/* WhatsApp Floating Button — Ultra Modern */
+/* WhatsApp Floating Button */
 .whatsapp-float {
   position: fixed;
   bottom: 28px;
@@ -574,10 +574,7 @@ input,textarea,select { font-family: inherit; outline: none; }
   cursor: pointer;
   border: none;
   outline: none;
-  box-shadow:
-    0 6px 20px rgba(37, 211, 102, 0.35),
-    0 2px 8px rgba(0, 0, 0, 0.15),
-    inset 0 1px 0 rgba(255,255,255,0.25);
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35), 0 2px 8px rgba(0, 0, 0, 0.15), inset 0 1px 0 rgba(255,255,255,0.25);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -597,15 +594,10 @@ input,textarea,select { font-family: inherit; outline: none; }
   transition: opacity 0.4s ease;
   pointer-events: none;
 }
-.whatsapp-float:hover::after {
-  opacity: 1;
-}
+.whatsapp-float:hover::after { opacity: 1; }
 .whatsapp-float:hover {
   transform: translateY(-6px) scale(1.03) translateZ(0);
-  box-shadow:
-    0 12px 32px rgba(37, 211, 102, 0.45),
-    0 4px 12px rgba(0, 0, 0, 0.2),
-    inset 0 1px 0 rgba(255,255,255,0.3);
+  box-shadow: 0 12px 32px rgba(37, 211, 102, 0.45), 0 4px 12px rgba(0, 0, 0, 0.2), inset 0 1px 0 rgba(255,255,255,0.3);
   letter-spacing: 0.08em;
 }
 .whatsapp-float:active {
@@ -620,13 +612,8 @@ input,textarea,select { font-family: inherit; outline: none; }
   flex-shrink: 0;
   transition: transform 0.4s cubic-bezier(0.34,1.56,0.64,1);
 }
-.whatsapp-float:hover .wa-icon {
-  transform: rotate(-10deg) scale(1.15);
-}
-.whatsapp-float .wa-text {
-  white-space: nowrap;
-  transition: opacity 0.3s ease;
-}
+.whatsapp-float:hover .wa-icon { transform: rotate(-10deg) scale(1.15); }
+.whatsapp-float .wa-text { white-space: nowrap; transition: opacity 0.3s ease; }
 .whatsapp-float::before {
   content: '';
   position: absolute;
@@ -650,10 +637,7 @@ input,textarea,select { font-family: inherit; outline: none; }
     font-size: 0.75rem;
     gap: 8px;
   }
-  .whatsapp-float .wa-icon {
-    width: 20px;
-    height: 20px;
-  }
+  .whatsapp-float .wa-icon { width: 20px; height: 20px; }
 }
 @media (max-width: 480px) {
   .whatsapp-float {
@@ -662,10 +646,7 @@ input,textarea,select { font-family: inherit; outline: none; }
     padding: 10px 16px 10px 12px;
     font-size: 0.72rem;
   }
-  .whatsapp-float .wa-icon {
-    width: 18px;
-    height: 18px;
-  }
+  .whatsapp-float .wa-icon { width: 18px; height: 18px; }
 }
 /* Premium Contact Numbers Section */
 .contact-premium-wrap {
@@ -702,10 +683,7 @@ input,textarea,select { font-family: inherit; outline: none; }
   opacity: 0.6;
   transition: width 0.3s ease, opacity 0.3s ease;
 }
-.contact-premium-card:hover::before {
-  width: 6px;
-  opacity: 1;
-}
+.contact-premium-card:hover::before { width: 6px; opacity: 1; }
 .contact-premium-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 32px rgba(0,0,0,0.08);
@@ -748,9 +726,7 @@ input,textarea,select { font-family: inherit; outline: none; }
   color: var(--color-text-tertiary);
   transition: color 0.3s ease;
 }
-.contact-premium-card:hover .cp-label {
-  color: var(--color-accent);
-}
+.contact-premium-card:hover .cp-label { color: var(--color-accent); }
 .contact-premium-card .cp-number {
   font-size: 1.15rem;
   font-weight: 700;
@@ -767,26 +743,14 @@ input,textarea,select { font-family: inherit; outline: none; }
     width: 100%;
     max-width: 320px;
   }
-  .contact-premium-card .cp-number {
-    font-size: 1rem;
-  }
+  .contact-premium-card .cp-number { font-size: 1rem; }
 }
 @media (max-width: 480px) {
-  .contact-premium-wrap {
-    gap: 16px;
-  }
-  .contact-premium-card {
-    padding: 14px 20px;
-    border-radius: 12px;
-  }
-  .contact-premium-card .cp-icon {
-    width: 38px;
-    height: 38px;
-  }
+  .contact-premium-wrap { gap: 16px; }
+  .contact-premium-card { padding: 14px 20px; border-radius: 12px; }
+  .contact-premium-card .cp-icon { width: 38px; height: 38px; }
 }
 </style>
-<base target="_blank">
-<base target="_blank">
 </head>
 <body>
 <div class="geo-banner"><span>.</span><span>توصيل مجاني للطلبات فوق ١٬٠٠٠ ج.م</span><a href="#" onclick="event.preventDefault();openStoreLocator()">اعثر على متجر</a></div>
@@ -992,6 +956,32 @@ input,textarea,select { font-family: inherit; outline: none; }
 </div>
 
 <div class="notification" id="notification"></div>
+
+<!-- Firebase Integration -->
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-app.js";
+  import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/12.14.0/firebase-firestore.js";
+
+  const firebaseConfig = {
+    apiKey: "AIzaSyAiHXeiPaNVPKP8ko-lUDbjfgKsLaGfRq8",
+    authDomain: "keysri---store.firebaseapp.com",
+    projectId: "keysri---store",
+    storageBucket: "keysri---store.firebasestorage.app",
+    messagingSenderId: "642307383646",
+    appId: "1:642307383646:web:2d3adc283c39999f876fcf",
+    measurementId: "G-V715NB863K"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  // Expose Firebase functions globally for the legacy script
+  window._firebaseDb = db;
+  window._firebaseCollection = collection;
+  window._firebaseAddDoc = addDoc;
+  window._firebaseServerTimestamp = serverTimestamp;
+</script>
+
 <script>
 const PRODUCTS = [
   {id:1,cat:'dresses',name:'فستان كتان أسود',price:2499,img:'images/products/product-1.jpg',hover:'images/products/product-1-hover.jpg',color:'أسود',colors:['#000','#8B4513','#fff'],sizes:['XS','S','M','L','XL'],material:'كتان ١٠٠٪',desc:'فستان كتان بقصة مستقيمة وتفاصيل أنيقة.',new:true},
@@ -1100,9 +1090,65 @@ function searchQuery(q) { document.getElementById('searchInput').value=q; handle
 let heroInterval;
 function startHero() { let i=0; const slides=document.querySelectorAll('.hero-slide'); const dots=document.querySelectorAll('.hero-dot'); function goTo(n){ slides.forEach(s=>s.classList.remove('active')); dots.forEach(d=>d.classList.remove('active')); slides[n].classList.add('active'); dots[n].classList.add('active'); i=n; } window.goToSlide=goTo; heroInterval=setInterval(()=>{ i=(i+1)%slides.length; goTo(i); },5000); }
 startHero();
-function checkout() { const modal=document.getElementById('checkoutModal'); const inner=document.getElementById('checkoutInner'); if(!state.cart.length) return showNotification('العربة فارغة'); document.getElementById('cartSlide').classList.remove('open'); document.getElementById('cartBackdrop').classList.remove('open'); const total=state.cart.reduce((s,i)=>s+i.price*i.qty,0); inner.innerHTML='<h2>إتمام الشراء</h2><div class="checkout-step"><div class="checkout-step-title"><span class="num">١</span> معلومات الشحن</div><div class="checkout-step-body"><div class="form-group"><label>الاسم الكامل</label><input type="text" placeholder="محمد أحمد" id="shipName"></div><div class="form-group"><label>رقم الهاتف</label><input type="tel" placeholder="٠١٢xxxxxxx" id="shipPhone"></div><div class="form-group"><label>العنوان</label><input type="text" placeholder="شارع, مدينة" id="shipAddr"></div><div class="form-row"><div class="form-group"><label>المدينة</label><input type="text" placeholder="القاهرة" id="shipCity"></div><div class="form-group"><label>الرمز البريدي</label><input type="text" placeholder="xxxxx" id="shipZip"></div></div></div></div><div class="checkout-step"><div class="checkout-step-title"><span class="num">٢</span> ملخص الطلب</div><div class="checkout-step-body">'+state.cart.map(i=>'<div class="checkout-summary-item"><span>'+i.name+' × '+i.qty+'</span><span>'+formatPrice(i.price*i.qty)+'</span></div>').join('')+'<div class="checkout-summary-total"><span>المجموع</span><span>'+formatPrice(total)+'</span></div></div></div><button class="place-order-btn" onclick="placeOrder()">تأكيد الطلب</button>'; modal.classList.add('open'); document.body.style.overflow='hidden'; }
 
-function placeOrder() { const name=document.getElementById('shipName')?.value; if(!name) return showNotification('يرجى إدخال الاسم'); state.cart=[]; saveCart(); const inner=document.getElementById('checkoutInner'); inner.innerHTML='<div class="order-confirm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><h3>تم تأكيد الطلب!</h3><p>شكراً لتسوقك من KEYSRI. سنتواصل معك قريباً.</p><button class="place-order-btn" style="max-width:200px;margin:20px auto 0" onclick="closeCheckout()">متابعة التسوق</button></div>'; showNotification('تم تأكيد الطلب بنجاح'); }
+function checkout() { const modal=document.getElementById('checkoutModal'); const inner=document.getElementById('checkoutInner'); if(!state.cart.length) return showNotification('العربة فارغة'); document.getElementById('cartSlide').classList.remove('open'); document.getElementById('cartBackdrop').classList.remove('open'); const total=state.cart.reduce((s,i)=>s+i.price*i.qty,0); inner.innerHTML='<h2>إتمام الشراء</h2><div class="checkout-step"><div class="checkout-step-title"><span class="num">١</span> معلومات الشحن</div><div class="checkout-step-body"><div class="form-group"><label>الاسم الكامل *</label><input type="text" placeholder="محمد أحمد" id="shipName"></div><div class="form-group"><label>رقم الهاتف *</label><input type="tel" placeholder="٠١٢xxxxxxx" id="shipPhone"></div><div class="form-group"><label>العنوان بالتفصيل *</label><input type="text" placeholder="شارع, حي, علامة مميزة" id="shipAddr"></div><div class="form-row"><div class="form-group"><label>المدينة *</label><input type="text" placeholder="القاهرة" id="shipCity"></div><div class="form-group"><label>الرمز البريدي</label><input type="text" placeholder="xxxxx" id="shipZip"></div></div></div></div><div class="checkout-step"><div class="checkout-step-title"><span class="num">٢</span> ملخص الطلب</div><div class="checkout-step-body">'+state.cart.map(i=>'<div class="checkout-summary-item"><span>'+i.name+' × '+i.qty+'</span><span>'+formatPrice(i.price*i.qty)+'</span></div>').join('')+'<div class="checkout-summary-total"><span>المجموع</span><span>'+formatPrice(total)+'</span></div></div></div><button class="place-order-btn" id="placeOrderBtn" onclick="placeOrder()">تأكيد الطلب</button>'; modal.classList.add('open'); document.body.style.overflow='hidden'; }
+
+async function placeOrder() {
+  const name=document.getElementById('shipName')?.value.trim();
+  const phone=document.getElementById('shipPhone')?.value.trim();
+  const address=document.getElementById('shipAddr')?.value.trim();
+  const city=document.getElementById('shipCity')?.value.trim();
+  const zip=document.getElementById('shipZip')?.value.trim();
+
+  if(!name || !phone || !address || !city) {
+    return showNotification('يرجى ملء جميع الحقول المطلوبة');
+  }
+
+  const btn = document.getElementById('placeOrderBtn');
+  if(btn) { btn.disabled = true; btn.textContent = 'جاري الإرسال...'; }
+
+  const total = state.cart.reduce((s,i)=>s+i.price*i.qty,0);
+  const orderData = {
+    customerName: name,
+    customerPhone: phone,
+    customerAddress: address,
+    customerCity: city,
+    customerZip: zip || '',
+    items: state.cart.map(i => ({
+      id: i.id,
+      name: i.name,
+      price: i.price,
+      qty: i.qty,
+      size: i.sizes ? i.sizes[0] : '',
+      color: i.color || '',
+      image: i.img
+    })),
+    total: total,
+    status: 'pending',
+    createdAt: window._firebaseServerTimestamp ? window._firebaseServerTimestamp() : new Date().toISOString()
+  };
+
+  try {
+    if(window._firebaseDb && window._firebaseCollection && window._firebaseAddDoc) {
+      await window._firebaseAddDoc(window._firebaseCollection(window._firebaseDb, 'orders'), orderData);
+    } else {
+      console.error('Firebase not initialized');
+      showNotification('خطأ في الاتصال بقاعدة البيانات');
+      if(btn) { btn.disabled = false; btn.textContent = 'تأكيد الطلب'; }
+      return;
+    }
+
+    state.cart=[];
+    saveCart();
+    const inner=document.getElementById('checkoutInner');
+    inner.innerHTML='<div class="order-confirm"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg><h3>تم تأكيد الطلب!</h3><p>شكراً لتسوقك من KEYSRI. سنتواصل معك قريباً.</p><button class="place-order-btn" style="max-width:200px;margin:20px auto 0" onclick="closeCheckout()">متابعة التسوق</button></div>';
+    showNotification('تم تأكيد الطلب بنجاح');
+  } catch(err) {
+    console.error(err);
+    showNotification('حدث خطأ أثناء إرسال الطلب');
+    if(btn) { btn.disabled = false; btn.textContent = 'تأكيد الطلب'; }
+  }
+}
 
 function closeCheckout() { document.getElementById('checkoutModal').classList.remove('open'); document.body.style.overflow=''; }
 
